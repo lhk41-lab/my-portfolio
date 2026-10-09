@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Student portfolio showcasing skills and projects.">
+  <title>Lakshmi Karavadi | Portfolio</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f7fc;
+      color: #263247;
+      line-height: 1.7;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1050px;
+      margin: auto;
+    }
+
+    header {
+      background: white;
+      border-bottom: 1px solid #e2e8f0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav {
+      min-height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      color: #14213d;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      list-style: none;
+    }
+
+    nav ul a {
+      color: #263247;
+      text-decoration: none;
+    }
+
+    nav ul a:hover {
+      color: #3867d6;
+    }
+
+    .hero {
+      background: #14213d;
+      color: white;
+      padding: 95px 0;
+    }
+
+    .eyebrow {
+      color: #b8ccff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.85rem;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 7vw, 4rem);
+      line-height: 1.15;
+      margin: 15px 0;
+    }
+
+    .hero p {
+      max-width: 720px;
+      color: #e0e7f5;
+      font-size: 1.1rem;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 22px;
+      padding: 11px 20px;
+      border-radius: 7px;
+      background: #3867d6;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #2952ad;
+    }
+
+    section {
+      padding: 65px 0;
+    }
+
+    .section-title {
+      color: #14213d;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .section-description {
+      color: #667085;
+      margin-bottom: 25px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skill {
+      background: white;
+      border: 1px solid #dce4f0;
+      border-radius: 8px;
+      padding: 10px 15px;
+      font-weight: bold;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .project {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 5px 18px rgba(20, 33, 61, 0.05);
+    }
+
+    .project h3 {
+      color: #14213d;
+      margin: 12px 0;
+      font-size: 1.25rem;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #eaf0ff;
+      color: #244da8;
+      padding: 3px 9px;
+      border-radius: 5px;
+      font-size: 0.8rem;
+    }
+
+    .project p {
+      color: #667085;
+      margin-bottom: 15px;
+    }
+
+    .project a {
+      font-weight: bold;
+      color: #3867d6;
+    }
+
+    .contact {
+      background: #eaf0fa;
+      text-align: center;
+    }
+
+    .contact p {
+      color: #667085;
+      max-width: 650px;
+      margin: auto;
+    }
+
+    footer {
+      background: #14213d;
+      color: white;
+      text-align: center;
+      padding: 22px;
+    }
+
+    @media (max-width: 650px) {
+      nav {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 15px 0;
+      }
+
+      nav ul {
+        gap: 14px;
+      }
+
+      .projects {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 65px 0;
+      }
+
+      section {
+        padding: 45px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="container">
+      <a class="logo" href="#home">Lakshmi Karavadi</a>
+
+      <ul>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- 1. PERSONAL STATEMENT -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="eyebrow">Student | Aspiring Accountant and Financial Analyst</div>
+        <p>
+          I am a motivated Financing and Accounting student with strong analytical,
+          communication, and problem-solving skills.
+        </p>
+
+        <a class="button" href="#projects">Explore My Projects</a>
+      </div>
+    </section>
+
+    <!-- 2. SKILLS -->
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+
+        <p class="section-description">
+          A selection of technical and professional skills.
+        </p>
+
+        <div class="skills">
+          <span class="skill">R</span>
+          <span class="skill">Data Analysis</span>
+          <span class="skill">Microsoft Excel</span>
+          <span class="skill">Problem Solving</span>
+          <span class="skill">Debugging</span>
+          <span class="skill">Communication</span>
+          <span class="skill">Teamwork</span>
+          <span class="skill">Git and GitHub</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. PROJECTS -->
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+
+        <p class="section-description">
+          A selection of projects highlighting my technical abilities.
+        </p>
+
+        <div class="projects">
+
+          <!-- PROJECT 1 -->
+          <article class="project">
+            <span class="tag">R Analysis | Classification</span>
+
+            <h3>Mushroom Classification: Edible or Poisonous?</h3>
+
+            <p>
+              While completing this project, I looked through the Mushroom Classification data set to better understand and be able to predict whether a mushroom would be edible or poisonous based on the physical characteristics noted. To fully comprehend the structure and distribution of the features, I applied data cleaning, visualization, and exploratory analysis to my code. I used two classification techniques, which were Decision Trees ( with rpart) and Naïve Bayes, in order to evaluate further. I generated confusion matrices to test model performance and used accuracy scores to see which model did better.
+            </p>
+
+<a href="https://docs.google.com/document/d/1RpbFmH-a1SgbJinhqGa7A6ldN4cnAlpNDf4h5rULU6g/edit?usp=sharing"
+     target="_blank"
+     rel="noopener noreferrer">
+    View Project Report
+  </a>
+          </article>
+
+          <!-- PROJECT 2 -->
+          <article class="project">
+            <span class="tag">AI in Business</span>
+
+            <h3>Exogenous Data in Audit Analytics</h3>
+
+            <p>
+              I wrote a paper explaining issue of limited exogenous data utilization in financial audits and proposed a solution grounded in the concepts covered in the Exogenous Data in Audit Analytics module. The paper showcases how auditors can use exogenous data as more evidence when assessing risk and detecting fraud. Recent research (2024-2025) shows that this type of data significantly helps auditors in detecting anomalies, evaluating concerning issues, and identifying signals of fraud. 
+            </p>
+
+ <a href="https://docs.google.com/document/d/1uTrVDSX1qJhu-Q88NAAeT0WauBzFKu5TJa5-eGUET_I/edit?usp=sharing"
+     target="_blank"
+     rel="noopener noreferrer">
+    View Project Report
+  </a>
+          </article>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="section-title">Let's Connect</h2>
+
+        <p>
+          I welcome opportunities to learn, collaborate, and grow my
+          technical and professional skills.
+        </p>
+
+        <a class="button" href="https://github.com/lhk41-lab">
+          Visit My GitHub
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Lakshmi Karavadi | Personal Portfolio</p>
+  </footer>
+</body>
+</html>
